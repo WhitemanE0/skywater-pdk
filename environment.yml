@@ -23,6 +23,7 @@ dependencies:
 - pip
 - yosys
 - netlistsvg
+- ngspice
 # Packages installed from PyPI
 - pip:
   - -r file:requirements.txt
