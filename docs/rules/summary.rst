@@ -1,5 +1,5 @@
-Summry of Key Periphery Rules
-=============================
+Summary of Key Periphery Rules
+==============================
 
 .. csv-table:: Table F3a: Front end layers (Low Voltage Devices)
    :file: summary/table-f3a-font-end-low-voltage.csv
@@ -28,7 +28,12 @@ Manual merge means that features below min. space should be manually merged by d
    :header-rows: 1
    :stub-columns: 1
 
-.. include:: summary/table-f4-key.rst
+.. table-f4-key
+.. rubric:: Footnotes
+
+.. [#f1] All layers drawn except pmm which is created as cpmm:mask over bond pads or converted into cpbo:mask.
+.. [#f2] Entries in this table show the layer (or combination of layers) that act as connecting layers listed in the row/column headings. An X indicates that there is no direct connection between these layers. N/A is entered along the diagonal. Over is entered along layers contacted by overlapping. A layer is always connected to itself.
+.. [#f3] (Met5 AND pad AND rdl) should have one of the following sizes for LVS to work with WLCSP option: 60x60, 50x70, 60x80, and 80x80
 
 .. csv-table:: Table F5: Device Connectivity Table
    :file: summary/table-f5-device-connectivity.csv

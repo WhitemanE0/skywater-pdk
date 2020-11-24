@@ -150,7 +150,16 @@ Summary of High Voltage Propagation
    :header-rows: 1
    :stub-columns: 1
 
-.. include:: hv/table-1-key.rst
+.. table-1-key
+.. rubric:: Footnotes
+
+.. [#f1] Deep N-Wells, N-Wells and P-Wells cannot be used as routing layers.
+.. [#f2] No hv rule checks for this device.
+.. [#f3] For N+ and P+ diffusion resistors and diodes, rule hv.diff.1 (spacing to unrelated diff) needs to be checked.
+.. [#f4] Need to be checked for hv.poly.1, hv.poly.2, hv.poly.3, hv.poly.4.  Needs technology approval for use of hv.X.3.
+.. [#f5] The hv property is localized to the hvgate and its extensions.
+.. [#f6] Interconnect and contacts propagate hv, and are hv devices internal to the CAD flow only.
+.. [#f7] "N/A" implies that there are no special hv rules for these layers.
 
 
 Very High Voltage Methodology
@@ -234,4 +243,8 @@ Following are the features of the VHV rules:
    :file: hv/table-2.csv
    :header-rows: 1
 
-.. include:: hv/table-2-key.rst
+.. table-2-key
+.. rubric:: Footnotes
+
+.. [#f8] Resistors tagged with text ""vhv_block"" serve as VHV propagation stopper and it is the duty of the designer to ensure that the resistor can support the required voltage drop. Otherwise components in VHV nets need to be tagged with vhvi:dg layer
+.. [#f9] If only source or drain is tagged with vhvi:dg layers.
